@@ -14,6 +14,7 @@ The network includes:
 - 1 Wireless Access Point
 - 1 Guest Laptop
 
+
 ## VLAN Configuration
 
 | VLAN | Name | Network |
