@@ -29,6 +29,6 @@ This project simulates the IT setup of a small company with three departments (S
 03-powershell/         Automation scripts
 04-documentation/      Guides and procedures
 ```
-## Autho
+## Author
 Mohamed Ali Tijani, junior IT support and network technician, Tunisia.
 [LinkedIn](https://www.linkedin.com/in/mohamed-ali-tijani-0ab3a236b/)
