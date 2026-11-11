@@ -1,34 +1,35 @@
-# Small Business IT Infrastructure
+# Phase 3: PowerShell automation
 
-Designing and building the IT environment of a 20-person company from scratch: network, Active Directory, PowerShell automation and documentation.
+Three scripts that automate common IT support tasks.
 
-## Overview
+## Scripts
 
-This project simulates the IT setup of a small company with three departments (Staff, Management, IT). I designed and tested the network in Cisco Packet Tracer, built a Windows Server 2025 domain in the WinLab simulator, applied Group Policies, and documented the work with screenshots.
-
-## Phases
-
-| Phase | Description | Status |
+| Script | What it does | Tested |
 |---|---|---|
-| [1. Network design](01-network) | VLANs, inter-VLAN routing, DHCP, guest isolation with an ACL (Cisco Packet Tracer) | ✅ Done |
-| [2. Active Directory](02-active-directory) | Domain company.local, OUs, users, groups, 3 Group Policies (WinLab Windows Server 2025 simulator) | ✅ Done (simulated lab) |
-| [3. PowerShell automation](03-powershell) | Scripts for user creation, inventory and disk checks | ⏳ Planned |
-| [4. Support documentation](04-documentation) | Helpdesk guide, onboarding checklist, backup procedure | ⏳ Planned |
+| `Get-SystemInventory.ps1` | Collects computer name, OS, CPU, RAM and disk information and exports a CSV report | ✅ On a real Windows 11 PC |
+| `Check-DiskSpace.ps1` | Warns when a disk has less free space than a threshold (default 20%) | ✅ On a real Windows 11 PC |
+| `New-UsersFromCsv.ps1` | Creates Active Directory users from a CSV file in the right OU and group | ⚠️ Dry-run only (see note) |
 
-## Skills used
+> **Note:** `New-UsersFromCsv.ps1` uses the ActiveDirectory module (`New-ADUser`, `Add-ADGroupMember`). I did not have a live domain controller to run it against, since Phase 2 was done in a simulator. I tested the CSV reading and the logic with `-DryRun`. The AD commands are standard cmdlets, but they are untested on a real domain.
 
-- **Networking:** VLANs, 802.1Q trunking, router-on-a-stick, DHCP, access control lists
-- **Systems:** Windows Server, Active Directory, Organizational Units, Group Policy
-- **Tools:** Cisco Packet Tracer, WinLab (Windows Server simulator), PowerShell, Git/GitHub
+## Usage
 
-## Repository structure
-
+```powershell
+.\Get-SystemInventory.ps1
+.\Check-DiskSpace.ps1 -ThresholdPercent 20
+.\New-UsersFromCsv.ps1 -CsvPath .\users.csv -DryRun
 ```
-01-network/            Packet Tracer project, topology, tests
-02-active-directory/   Domain setup and Group Policy screenshots
-03-powershell/         Automation scripts
-04-documentation/      Guides and procedures
-```
-## Author
-Mohamed Ali Tijani, junior IT support and network technician, Tunisia.
-[LinkedIn](https://www.linkedin.com/in/mohamed-ali-tijani-0ab3a236b/)
+
+## Results
+
+**System inventory:**
+
+![Inventory output](screenshots/inventory-output.png)
+
+**Disk space check (OK and WARNING cases):**
+
+![Disk check output](screenshots/disk-check-output.png)
+
+**User creation, dry run:**
+
+![Dry run output](screenshots/dry-run-output.png)
