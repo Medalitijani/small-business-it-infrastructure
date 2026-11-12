@@ -10,10 +10,10 @@ This project simulates the IT setup of a small company with three departments (S
 
 | Phase | Description | Status |
 |---|---|---|
-| [1. Network design](01-network) | VLANs, inter-VLAN routing, DHCP, guest isolation with an ACL (Cisco Packet Tracer) | ✅ Done |
-| [2. Active Directory](02-active-directory) | Domain company.local, OUs, users, groups, 3 Group Policies (WinLab Windows Server 2025 simulator) | ✅ Done (simulated lab) |
-| [3. PowerShell automation](03-powershell) | Scripts for user creation, inventory and disk checks | ✅ Done |
-| [4. Support documentation](04-documentation) | Helpdesk guide, onboarding checklist, backup procedure | ⏳ Planned |
+| [1. Network design](01-network) | VLANs, inter-VLAN routing, DHCP, guest isolation with an ACL (Cisco Packet Tracer) 
+| [2. Active Directory](02-active-directory) | Domain company.local, OUs, users, groups, 3 Group Policies (WinLab Windows Server 2025 simulator) 
+| [3. PowerShell automation](03-powershell) | Scripts for user creation, inventory and disk checks 
+| [4. Support documentation](04-documentation) | Helpdesk guide, onboarding checklist, backup procedure 
 
 ## Skills used
 
