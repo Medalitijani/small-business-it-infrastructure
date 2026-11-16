@@ -1,5 +1,31 @@
 # Small Business IT Infrastructure
 
+> A documented small-company IT environment covering network segmentation, Windows domain administration concepts, PowerShell automation, and support procedures.
+
+[![Cisco Packet Tracer](https://img.shields.io/badge/Network-Cisco%20Packet%20Tracer-1BA0D7)](https://www.netacad.com/cisco-packet-tracer)
+[![PowerShell](https://img.shields.io/badge/Automation-PowerShell-5391FE?logo=powershell&logoColor=white)](https://learn.microsoft.com/powershell/)
+[![Documentation](https://img.shields.io/badge/Focus-IT%20Documentation-475569)](#repository-structure)
+
+## Project at a glance
+
+The lab models a 20-person company with three departments: Staff, Management, and IT. It is organized as four documented phases, from network design to operational support procedures.
+
+## Contents
+
+- [Project overview](#project-overview)
+- [Skills demonstrated](#skills-demonstrated)
+- [Repository structure](#repository-structure)
+- [Environment and testing notes](#environment-and-testing-notes)
+
+## Selected evidence
+
+- [Network topology](01-network/Topology.png)
+- [Staff-to-server connectivity test](01-network/Staf-to-server-ping.png)
+- [Active Directory users](02-active-directory/screenshots/ad-staff-users.png)
+- [PowerShell inventory output](03-powershell/screenshots/inventory-output.png)
+
+---
+
 Designing and documenting the IT environment of a 20-person company: network infrastructure, Active Directory, PowerShell automation, and IT support procedures.
 
 ## Project overview
