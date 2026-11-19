@@ -39,14 +39,14 @@ The work is organized into four phases:
 | [1. Network design](01-network/README.md) | VLANs, inter-VLAN routing, DHCP, and guest isolation with an ACL (Cisco Packet Tracer) | Completed |
 | [2. Active Directory](02-active-directory/README.md) | Domain, organizational units, user accounts, security groups, and Group Policy Objects (WinLab simulator) | Completed in simulation |
 | [3. PowerShell automation](03-powershell/README.md) | Scripts for system inventory, disk-space checks, and Active Directory user creation | Scripts documented; AD user creation tested in dry-run mode |
-| [4. Support documentation](04-documentation/README.md) | Helpdesk guide, employee onboarding checklist, and backup procedure | Completed |
+| [4. Support documentation](04-documentation/README.md) | Helpdesk guide, employee onboarding checklist, and backup procedure documentation | Documents completed; procedures are recommendations, not a live business deployment |
 
 ## Skills demonstrated
 
 - **Networking:** VLANs, 802.1Q trunking, router-on-a-stick, DHCP, and access control lists (ACLs)
 - **Systems administration:** Windows Server concepts, Active Directory, Organizational Units, user and group management, and Group Policy
 - **Automation:** PowerShell, CIM, CSV processing, and Active Directory cmdlets
-- **IT support:** Troubleshooting, ticket documentation, onboarding, backup planning, and restore testing
+- **IT support:** Troubleshooting, ticket documentation, onboarding, backup planning, and documented restore procedures
 - **Tools:** Cisco Packet Tracer, WinLab Windows Server simulator, PowerShell, Git, and GitHub
 
 ## Repository structure
@@ -67,6 +67,8 @@ The work is organized into four phases:
 
 ## Author
 
-Mohamed Ali Tijani — Junior IT Support and Network Technician, Tunisia.
+**Author:** Mohamed Ali Tijani  
+**Career focus:** System & Network Administrator  
+**Project type:** Individual infrastructure lab; network and directory components are simulated as documented above.
 
 [LinkedIn](https://www.linkedin.com/in/mohamed-ali-tijani-0ab3a236b/)
