@@ -37,6 +37,8 @@ Preview user creation without changing Active Directory:
 .\scripts\New-UsersFromCsv.ps1 -CsvPath .\scripts\users.csv -DryRun
 ```
 
+The script checks that the CSV contains `FirstName`, `LastName`, `Username` and `Department`. It accepts the `Staff`, `Management` and `IT` departments, skips invalid or duplicate rows, and reports separately if an account is created but group membership fails. The dry run validates the input and previews the planned actions; it does not verify that the target OUs or groups exist in Active Directory.
+
 ## Results
 
 **System inventory**
