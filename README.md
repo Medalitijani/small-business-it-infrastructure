@@ -68,7 +68,7 @@ The work is organized into four phases:
 ## Author
 
 **Author:** Mohamed Ali Tijani  
-**Career focus:** System & Network Administrator  
+**Career focus:** IT Support & Network Technician  
 **Project type:** Individual infrastructure lab; network and directory components are simulated as documented above.
 
 [LinkedIn](https://www.linkedin.com/in/mohamed-ali-tijani-0ab3a236b/)
