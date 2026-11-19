@@ -8,7 +8,7 @@ This phase contains three PowerShell scripts for common IT support and system ad
 |---|---|---|
 | [Get-SystemInventory.ps1](scripts/Get-SystemInventory.ps1) | Collects computer, operating system, hardware, and disk information; exports a CSV report | Tested on a Windows 11 PC |
 | [Check-DiskSpace.ps1](scripts/Check-DiskSpace.ps1) | Reports whether each fixed disk is above or below a free-space threshold | Tested on a Windows 11 PC |
-| [New-UsersFromCsv.ps1](scripts/New-UsersFromCsv.ps1) | Creates Active Directory users from a CSV file and adds them to department groups | CSV import and logic tested in dry-run mode only |
+| [New-UsersFromCsv.ps1](scripts/New-UsersFromCsv.ps1) | Creates Active Directory users from a CSV file and adds them to department groups | Dry-run mode available; revised script not yet tested against a live domain |
 
 ## Requirements
 
@@ -55,4 +55,4 @@ The script checks that the CSV contains `FirstName`, `LastName`, `Username` and 
 
 ## Testing limitations
 
-The system inventory and disk-space scripts were tested on a real Windows 11 PC. The user-creation script was tested with the `-DryRun` option because this project does not have a live domain controller available for execution. The Active Directory cmdlets have therefore not been validated against a production or live test domain.
+The system inventory and disk-space scripts were tested on a real Windows 11 PC. The revised user-creation script has not yet been executed against a live domain controller. Its `-DryRun` option previews valid rows without changing Active Directory; the Active Directory cmdlets and target OU/group configuration still require validation in a test domain.
